@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ko">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>서비스 결제</title>
+      <link rel="stylesheet" href="css/reset.css" />
+      <link rel="stylesheet" href="css/common.css" />
+      <link rel="stylesheet" href="css/service.css" />
+      <script defer src="js/com.js"></script>
+   </head>
+   <body>
+      <div class="wrap">
+         <header class="header">
+            <nav class="nav wrap-innner">
+               <h1 class="logo">
+                  <a href="main.html"><img src="img/header-logo.png" alt="Rx+" /></a>
+               </h1>
+               <ul class="gnb">
+                  <li><a href="#">솔루션</a></li>
+                  <li><a href="#">프로그램 다운받기</a></li>
+               </ul>
+               <div class="join-us">
+                  <button onclick="location.href='signup.html'">회원가입</button>
+                  <button onclick="location.href='login.html'">로그인</button>
+               </div>
+            </nav>
+         </header>
+         <div class="quick-menu">
+            <div class="quick-menu-inner">
+               <div class="customer-support">
+                  <div><img src="img/customer-support-icon.png" alt="" /></div>
+                  <p>고객지원센터</p>
+                  <p>0000 - 0000</p>
+                  <p>평일 09시 ~ 18시<br />토,일,공휴일 휴무</p>
+               </div>
+               <div class="monitoring-support">
+                  <a href="#">
+                     <div><img src="img/monitoring-support-icon.png" alt="" /></div>
+                     <p>원격지원</p>
+                  </a>
+               </div>
+            </div>
+         </div>
+         <h2 class="service-title">서비스 결제</h2>
+         <div class="service-depth">
+            <ul>
+               <li>신청</li>
+               <li class="current-depth">결제</li>
+               <li>완료</li>
+            </ul>
+         </div>
+         <div class="wrap-innner service">
+            <div class="service-subtitle">
+               <h3>신청정보 등록</h3>
+            </div>
+            <table class="table-select">
+               <tbody>
+                  <tr>
+                     <th>서비스명</th>
+                     <td>스탠다드</td>
+                  </tr>
+                  <tr>
+                     <th>기본금액</th>
+                     <td>40,000원 <span class="text-blue text-small">VAT별도</span></td>
+                  </tr>
+               </tbody>
+            </table>
+            <table class="table-payment">
+               <thead>
+                  <tr>
+                     <td>결제방법</td>
+                     <td>정가</td>
+                     <td>할인률</td>
+                     <td>혜택가</td>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td>
+                        <input type="radio" name="service-term" id="year" />
+                        <label for="year"><span>1년 </span>/ 1년 정기결제</label>
+                     </td>
+                     <td>
+                        <p class="text-blue text-line">480,000<span class="text-small">원</span></p>
+                     </td>
+                     <td class="text-blue">25<span class="text-small">%</span></td>
+                     <td>
+                        <div class="text-price">
+                           <p class="month-text">30,000<span class="text-small">원</span></p>
+                           <p class="year-text">360,000<span class="text-small">원</span></p>
+                        </div>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <input type="radio" name="service-term" id="half-year" />
+                        <label for="half-year"><span>6개월 </span>/ 6개월 정기결제</label>
+                     </td>
+                     <td>
+                        <p class="text-blue text-line">240,000<span class="text-small">원</span></p>
+                     </td>
+                     <td class="text-blue">12.5<span class="text-small">%</span></td>
+                     <td>
+                        <div class="text-price">
+                           <p class="month-text">35,000<span class="text-small">원</span></p>
+                           <p class="year-text">210,000<span class="text-small">원</span></p>
+                        </div>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <input type="radio" name="service-term" id="month" />
+                        <label for="month"><span>1개월 </span> / 매월25일</label>
+                     </td>
+                     <td>
+                        <p class="text-blue text-line">40,000<span class="text-small">원</span></p>
+                     </td>
+                     <td class="text-blue">없음</td>
+                     <td>
+                        <div class="text-price">
+                           <p class="month-text">40,000<span class="text-small">원</span></p>
+                        </div>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>* 안내</td>
+                     <td>
+                        <p>
+                           장기결제(6개월, 1년) 중도해지 시 사용월 기준<span class="text-bold">1개월 정가로 정산 후 환불처리</span>됩니다.<br />
+                           결제기간 완료 후 운영 정책 변경 시 할인율은 변경 될 수 있습니다.
+                        </p>
+                     </td>
+                  </tr>
+               </tbody>
+            </table>
+            <div class="service-subtitle">
+               <h3>결제안내</h3>
+            </div>
+            <div class="notice-box">
+               <p><span class="text-bold">스탠다드 1년</span> 이용료를 <span class="text-red">25%</span> 할인가로 <span class="text-red">396,000원</span>(VAT포함) 결제합니다.</p>
+            </div>
+            <div class="btn-box">
+               <button class="prev-btn">이전</button>
+               <button class="next-btn" onclick="location.href='service-payment.html'">다음</button>
+            </div>
+         </div>
+         <footer class="footer">
+            <div class="wrap-innner">
+               <div class="footer-top">
+                  <ul class="footer-info">
+                     <li><a href="#">회사소개</a></li>
+                     <li><a href="service-guide.html">이용약관</a></li>
+                     <li><a href="#">개인정보처리방치</a></li>
+                  </ul>
+                  <ul class="footer-link">
+                     <li>
+                        <a href="#">솔루션 다운로드</a>
+                     </li>
+                     <li>
+                        <a href="#">브로슈어 다운로드</a>
+                     </li>
+                     <li>
+                        <a href="#">카카오톡 채널가기</a>
+                     </li>
+                     <li>
+                        <a href="#">네이버 블로그가기</a>
+                     </li>
+                  </ul>
+               </div>
+               <div class="footer-bottom">
+                  <div class="footer-logo">
+                     <h2 class="footer-logo"><img src="img/footer-logo.png" alt="RX+ 로고" /></h2>
+                     <p>Copyright ⓒ SampleCompany, Inc. All Right Reserved.</p>
+                  </div>
+                  <ul>
+                     <li><span>상호명 : </span>(주) 샘플컴퍼니</li>
+                     <li><span>대표이사 : </span>홍길동</li>
+                     <li><span>사업자등록번호 : </span>000-00-00000</li>
+                     <li class="customer-service"><span>고객지원센터 : </span>0000-0000</li>
+                     <li>평일 09시 ~ 18시 / 토,일,공휴일 휴무</li>
+                  </ul>
+               </div>
+            </div>
+         </footer>
+      </div>
+      <script>
+         const modal = document.querySelector(".pop-wrap");
+         const openModalBtn = document.querySelector(".pop-open");
+         const closeModalBtn = document.querySelector(".pop-close");
+         // 모달창 열기
+         openModalBtn.addEventListener("click", () => {
+            modal.style.display = "block";
+            document.body.style.overflow = "hidden"; // 스크롤바 제거
+         });
+         // 모달창 닫기
+         closeModalBtn.addEventListener("click", () => {
+            modal.style.display = "none";
+            document.body.style.overflow = "auto"; // 스크롤바 보이기
+         });
+      </script>
+   </body>
+</html>

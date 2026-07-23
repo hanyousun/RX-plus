@@ -1,0 +1,228 @@
+/* 전체 정렬 */
+.member-content {
+   display: flex;
+   padding: 65px 35px 150px 35px;
+}
+
+/* 메뉴 영역 */
+.join-content-menu {
+   width: 310px;
+   padding: 90px 70px 155px 0px;
+}
+.join-content-menu h2 {
+   margin-bottom: 36px;
+   font-size: 3.5rem;
+   font-weight: 600;
+   font-family: "Pretendard";
+}
+.join-content-menu h2::before {
+   content: "";
+   display: block;
+   width: 64px;
+   height: 26px;
+   background: url(../img/header-logo.png) no-repeat left center;
+   background-size: contain;
+}
+.join-content-menu .join-menu-list button {
+   width: 240px;
+   height: 46px;
+   margin-bottom: 10px;
+   padding: 0px 16px;
+   border: 1px solid #eaeaea;
+   border-radius: 5px;
+   text-align: left;
+}
+.join-content-menu .join-menu-list button:hover {
+   background: #edf2fa;
+}
+.join-content-menu .join-menu-list button.active {
+   background: #2872db;
+   color: #fff;
+   font-weight: 500;
+}
+
+/* 회원가입 영역 */
+.join-content-container {
+   width: 100%;
+}
+.join-content-container h3 {
+   margin-bottom: 40px;
+   font-size: 3rem;
+   font-weight: 700;
+   text-align: center;
+}
+
+/* 회원가입 입력 영역 */
+.join-content {
+   position: relative;
+   padding: 70px 80px 70px 80px;
+   border: 1px solid #eaeaea;
+   border-radius: 10px;
+   box-shadow: 3px 3px 3px #fafafa;
+}
+.join-content.row-one {
+   padding: 70px 158px 70px 158px;
+}
+.join-content .join-content-inner {
+   display: flex;
+   justify-content: space-between;
+}
+.join-content-item {
+   position: relative;
+   margin-bottom: 26px;
+}
+.join-content-item.col-two {
+   display: flex;
+   align-items: center;
+}
+.join-content-item:last-child {
+   margin-bottom: 0;
+}
+.join-content-item .join-content-label {
+   margin-bottom: 12px;
+   font-size: 1.4rem;
+   font-weight: 500;
+}
+.join-content-item .join-content-text {
+   margin: 0px 0px 12px 5px;
+   font-size: 1.4rem;
+   font-weight: 400;
+}
+.join-content .join-text {
+   display: flex;
+   align-items: center;
+   justify-content: flex-end;
+   margin-top: 23px;
+   font-size: 1.3rem;
+}
+.join-content .join-text::before {
+   content: "";
+   display: inline-block;
+   width: 6px;
+   height: 6px;
+   margin-right: 5px;
+   border-radius: 50%;
+   background: #2872db;
+}
+.join-content .save-button {
+   width: 100%;
+   text-align: center;
+   margin-top: 60px;
+}
+.join-content .save-button button {
+   width: 325px;
+   height: 56px;
+   border-radius: 10px;
+   background: #2872db;
+   font-size: 1.8rem;
+   color: #fff;
+}
+.join-content-left {
+   margin-right: 68px;
+}
+.join-content-right {
+   margin-left: 68px;
+}
+
+/* 줄 간격 조절 */
+.join-content-right .join-content-item:nth-child(4) {
+   margin-bottom: 31px;
+}
+.join-content-right .join-content-item:nth-child(5) {
+   margin-bottom: 31px;
+}
+.join-input-box {
+   height: 270px;
+   margin-bottom: 38px;
+   padding: 34px 30px;
+   border: 1px solid #cecece;
+   border-radius: 3px;
+   overflow-y: auto;
+}
+.join-input-box p,
+.service-input-box p {
+   font-family: "Pretendard";
+   font-size: 1.3rem;
+   line-height: 1.5;
+}
+.join-input-box .input-box-title01,
+.service-input-box .input-box-title01 {
+   margin-bottom: 10px;
+   font-size: 1.7rem;
+   font-weight: 700;
+   text-align: center;
+}
+.join-input-box .input-box-title02,
+.service-input-box .input-box-title02 {
+   margin-top: 20px;
+   font-weight: 700;
+}
+.input-box-script {
+   margin-top: 20px;
+   line-height: 1.3;
+}
+
+/* 테이블 영역 */
+table {
+   border: 1px solid #a5a5a5;
+   font-size: 1.2rem;
+}
+table thead {
+   border-bottom: 1px solid #a5a5a5;
+   background: #e2e2e2;
+   white-space: nowrap;
+}
+table tr {
+   border-bottom: 1px solid #a5a5a5;
+}
+table td {
+   padding: 13px 15px;
+   text-align: center;
+   vertical-align: middle;
+   line-height: 1.3;
+}
+table td:not(:first-child) {
+   border-left: 1px solid #a5a5a5;
+}
+.table-text {
+   margin-top: 5px;
+   font-size: 1.2rem;
+   color: #666;
+}
+.table-text + p::before {
+   content: "";
+   display: block;
+   margin: 25px 0px;
+   border-top: 1px solid #d4d4d4;
+}
+.table-info {
+   margin: 12px 0px;
+}
+/* 체크박스 영역 */
+.join-input-box + .join-check-box {
+   bottom: -23px;
+}
+
+.search-button {
+   display: flex;
+   align-items: center;
+   width: 41px;
+   height: 41px;
+   padding: 0px 10px;
+   margin-left: 3px;
+   border-radius: 5px;
+   background: #2872db;
+}
+
+.join-content-input > .select-option01,
+.join-content-input > .select-option02,
+.join-content-input > .select-option03,
+.join-content-input > .select-option04 {
+   display: none;
+}
+.login-text {
+   margin-top: 23px;
+   font-size: 1.3rem;
+   line-height: 1.3;
+   color: #666;
+}

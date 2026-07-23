@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="ko">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>서비스 결제</title>
+      <link rel="stylesheet" href="css/reset.css" />
+      <link rel="stylesheet" href="css/common.css" />
+      <link rel="stylesheet" href="css/service.css" />
+      <script defer src="js/com.js"></script>
+   </head>
+   <body>
+      <div class="wrap">
+         <header class="header">
+            <nav class="nav wrap-innner">
+               <h1 class="logo">
+                  <a href="main.html"><img src="img/header-logo.png" alt="Rx+" /></a>
+               </h1>
+               <ul class="gnb">
+                  <li><a href="#">솔루션</a></li>
+                  <li><a href="#">프로그램 다운받기</a></li>
+               </ul>
+               <div class="join-us">
+                  <button onclick="location.href='signup.html'">회원가입</button>
+                  <button onclick="location.href='login.html'">로그인</button>
+               </div>
+            </nav>
+         </header>
+         <div class="quick-menu">
+            <div class="quick-menu-inner">
+               <div class="customer-support">
+                  <div><img src="img/customer-support-icon.png" alt="" /></div>
+                  <p>고객지원센터</p>
+                  <p>0000 - 0000</p>
+                  <p>평일 09시 ~ 18시<br />토,일,공휴일 휴무</p>
+               </div>
+               <div class="monitoring-support">
+                  <a href="#">
+                     <div><img src="img/monitoring-support-icon.png" alt="" /></div>
+                     <p>원격지원</p>
+                  </a>
+               </div>
+            </div>
+         </div>
+         <h2 class="service-title">서비스 결제</h2>
+         <div class="service-depth">
+            <ul>
+               <li>신청</li>
+               <li class="current-depth">결제</li>
+               <li>완료</li>
+            </ul>
+         </div>
+         <div class="wrap-innner service">
+            <div class="service-subtitle">
+               <h3>결제정보 등록</h3>
+            </div>
+            <table class="payment-info">
+               <tbody>
+                  <tr>
+                     <th>카드번호</th>
+                     <td>
+                        <div class="join-input-text input-color">
+                           <input type="text" />
+                        </div>
+                        <div class="join-input-text input-color">
+                           <input type="text" />
+                        </div>
+                        <div class="join-input-text">
+                           <input type="text" />
+                        </div>
+                        <div class="join-input-text">
+                           <input type="text" />
+                        </div>
+                     </td>
+                  </tr>
+                  <tr>
+                     <th>유효기간</th>
+                     <td>
+                        <div class="join-input-text">
+                           <input type="text" placeholder="월" />
+                        </div>
+                        <div class="join-input-text">
+                           <input type="text" placeholder="년도" />
+                        </div>
+                     </td>
+                  </tr>
+                  <tr>
+                     <th>비밀번호</th>
+                     <td>
+                        <div class="join-input-text">
+                           <input type="text" placeholder="앞 2자리" />
+                        </div>
+                     </td>
+                  </tr>
+                  <tr>
+                     <th>성명 / 사업자명의</th>
+                     <td>
+                        <div class="join-input-text">
+                           <input type="text" />
+                        </div>
+                        <p class="example-text"><span class="text-blue">개인카드</span> 예시 : 홍길동</p>
+                        <p class="example-text"><span class="text-blue">법인카드</span>예시 : 샘플컴퍼니의원</p>
+                     </td>
+                  </tr>
+                  <tr>
+                     <th>생년월일 / 사업자등록번호</th>
+                     <td>
+                        <div class="join-input-text">
+                           <input type="text" />
+                        </div>
+                        <p class="example-text"><span class="text-blue">개인카드</span> 예시 : 790101</p>
+                        <p class="example-text"><span class="text-blue">법인카드</span>예시 : 1234567890</p>
+                     </td>
+                  </tr>
+               </tbody>
+            </table>
+            <div class="service-subtitle">
+               <h3>이용약관 동의</h3>
+            </div>
+            <div class="agree-box">
+               <input type="checkbox" id="chk-box" />
+               <label for="chk-box">
+                  <p><span class="text-blue">필수</span> 서비스 이용약관 모두 동의합니다.</p>
+               </label>
+               <button class="pop-open">전문보기</button>
+            </div>
+            <div class="wrap pop-wrap">
+               <div class="pop-content">
+                  <button class="pop-close"></button>
+                  <div class="join-content-item">
+                     <div class="join-check-box"><label for="chk-box01">동의(필수)</label><input type="checkbox" name="login-chk" id="chk-box01" /></div>
+                     <div class="join-content-label">
+                        <p>자동승인 약관</p>
+                     </div>
+                     <div class="join-input-box">
+                        <p class="input-box-title01">[결제] 자동승인 약관</p>
+                        <p class="input-box-title02">1. 금융거래정보의 제공 동의서제 1 조 [목적]</p>
+                        <p>
+                           ① "금융실명거래 및 비밀보장에 관한 법률"의 규정에 따라, 이용자는 본 신청과 관련하여 다음 금융거래정보를 상기 청구기관(청구기관의 결제 대행업체를 포함함)에 제공하는 것에 동의합니다.
+                           <br />
+                           - 거래 카드사(은행)명<br />
+                           - 카드번호<br />
+                           ② 상기 1의 이용자 동의는 이용자가 신용카드 등 자동승인을 신규 신청하는 때로부터 해지 신청할 때까지 유효합니다.<br />
+                        </p>
+                        <p class="input-box-title02">2. 신용카드 자동승인 약관</p>
+                        <p>
+                           ① 이용자가 신청하신 신용카드 정기결제는 효성FMS(이하 “결제대행사”라 합니다)에서 대행합니다. 이에 따라 이용자의 신용카드 결제 내역에는 정기결제와 관련한 이용가맹점이 ㈜크레도웨이로
+                           표기됩니다.<br />
+                           ② 이용자는 앞면의 본인(카드소유주)이 납부하여야 할 요금에 대하여 별도의 통지 없이 본인의 카드정보를 사용하여 청구기관이 정한 지정 승인일(휴일인 경우 익영업일)에 승인 납부하는데 이의가
+                           없습니다.<br />
+                           ③ 신용카드 등 자동승인을 위하여 지정카드번호로 승인하는 경우에는 결제대행사가 정한 지정카드의 유효성 인증 절차 후 신용카드 이용약관이나 약정서에 규정된 안심클릭 혹은 ISP인증 등의 절차 없이
+                           결제가 진행됩니다.<br />
+                           ④ 신용카드 등 자동승인 승인한도가 지정 출금일 현재 청구기관의 청구금액보다 부족하거나, 신용카드의 사용정지 또는 신용카드 대금의 연체 등으로 대체 청구가 불가능한 경우의 손해는 이용자가
+                           부담합니다.<br />
+                           ⑤ 신용카드 등 자동승인 신규신청에 의한 승인개시일은 결제대행사가 청구기관으로부터 사전 통지 받은 승인일입니다.<br />
+                           ⑥ 신용카드 등 자동승인 신청 및 변경(신규, 해지)은 해당 승인일 30일 전까지 신청서를 제출하여야 합니다.<br />
+                           ⑦ 신용카드 등 자동승인 신청에 의한 지정카드 번호에서의 승인은 청구기관의 청구대로 승인키로 하며 승인금액에 이의가 있는 경우에는 본인과 청구기관이 협의하여 조정합니다.<br />
+                           ⑧ 결제대행사는 이용자의 본 신청과 관련한 거래내역에 대한 별도 조회(URL등 이용방법) 수단을 제공합니다.<br />
+                           ⑨ 이 약관은 신청서를 청구기관에 직접 제출하여 신용카드 등 자동승인을 신청한 경우에도 적용합니다.<br />
+                           ⑩ 기타 본 약관에서 규정하지 않은 사항은 여신전문금융업법 등 관련법령, 신용카드이용약관 및 결제대행사의 일반약관을 따릅니다.<br />
+                        </p>
+                     </div>
+                  </div>
+                  <div class="join-content-item">
+                     <div class="join-check-box"><label for="chk-box02">동의(필수)</label><input type="checkbox" name="login-chk" id="chk-box02" /></div>
+                     <div class="join-content-label">
+                        <p>고유식별정보 수집 및 이용동의</p>
+                     </div>
+                     <div class="join-input-box">
+                        <p class="input-box-title01">[고유식별정보 수집 및 이용에 대한 동의]</p>
+                        <p>
+                           효성FMS(이하 “결제대행사”)는 이용자의 개인정보를 중요시하며, "정보통신망 이용촉진 및 정보보호에 관한 법률" 및 “개인정보보호법”과 “전자상거래 등에서의 소비자보호에 관한 법률”을 준수하고
+                           있습니다. <br />
+                           결제대행사는 전자지급결제대행서비스 및 결제대금예치서비스(이하 “서비스”) 이용자로부터 아래와 같이 고유식별정보를 수집 및 이용, 제공합니다.
+                        </p>
+                        <p class="input-box-title02">1. 고유식별정보의 수집 및 이용목적</p>
+                        <p>
+                           결제대행사는 다음과 같은 목적 하에 “서비스”와 관련한 고유식별정보를 수집합니다. <br />
+                           - 서비스 제공 계약의 성립, 유지, 종료를 위한 본인 식별 및 실명확인, 각종 회원관리<br />
+                           - 서비스 제공 과정 중 본인 식별, 인증, 실명확인 및 회원에 대한 각종 안내/고지<br />
+                           - 대금 환불 서비스 제공<br />
+                           - 서비스 제공 및 관련 업무처리에 필요한 동의 또는 철회 등 의사확인<br />
+                        </p>
+                        <p class="input-box-title02">2. 수집하는 고유식별정보 항목</p>
+                        <p>
+                           결제수단별 결제대행사가 수집하는 고유식별정보의 항목은 다음과 같습니다 <br />
+                           (신용카드)<br />
+                           카드번호, 승인시간, 승인번호, 승인금액 등<br />
+                           (자동이체)<br />
+                           계좌번호, 주민등록번호 앞 6자리(생년월일), 은행명<br />
+                        </p>
+                        <p class="input-box-title02">3. 고유식별정보의 보유 및 이용기간</p>
+                        <p>
+                           이용자의 고유식별정보는 원칙적으로 고유식별정보의 수집 및 이용목적이 달성되면 지체 없이 파기 합니다. 단, 다음의 정보에 대해서는 아래의 이유로 명시한 기간 동안 보존 합니다. <br />
+                           - 계약 또는 청약철회 등에 관한 기록<br />
+                           보존기간: 5년 / 보존근거: 전자상거래 등에서의 소비자보호에 관한 법률<br />
+                           - 대금결제 및 재화 등의 공급에 관한 기록<br />
+                           보존기간: 5년 / 보존근거: 전자상거래 등에서의 소비자보호에 관한 법률 (단, 건당 거래 금액이 1만원 이하의 경우에는 1년간 보존 합니다.)<br />
+                           - 소비자의 불만 또는 분쟁처리에 관한 기록<br />
+                           보존기간: 3년 / 보존근거: 전자상거래 등에서의 소비자보호에 관한 법률<br />
+                           - 신용정보의 수집/처리 및 이용 등에 관한 기록<br />
+                           - 방문에 관한 기록<br />
+                           보존기간: 3개월 / 보존근거: 통신비밀보호법<br />
+                        </p>
+                        <p class="input-box-title02">4. 이용자의 고유식별정보의 수집 및 이용 거부</p>
+                        <p>이용자는 결제대행사의 고유식별정보 수집 및 이용 동의를 거부할 수 있습니다. 단, 동의를 거부 하는 경우 서비스 결제가 정상적으로 완료 될 수 없음을 알려 드립니다.</p>
+                        <p class="input-box-title02">[고유식별정보의 제공 동의]</p>
+                        <p>
+                           효성FMS(이하 “결제대행사”)는 이용자의 개인정보를 중요시하며, "정보통신망 이용촉진 및 정보보호에 관한 법률" 및 “개인정보보호법”과 “전자상거래 등에서의 소비자보호에 관한 법률”을 준수하고
+                           있습니다. 결제대행사는 이용자의 고유식별정보를 [고유식별정보의 수집/이용 목적]에서 고지한 범위 내에서 사용하며, 이용자의 사전 동의 없이는 동 범위를 초과하여 이용하거나 원칙적으로 이용자의
+                           고유식별정보를 외부에 제공 또는 위탁하지 않습니다. 다만, 아래의 경우에는 예외로 합니다. - 이용자가 사전에 동의한 경우(이용자가 사전에 동의한 경우란, 서비스 이용 등을 위하여 이용자가 자발적으로
+                           자신의 고유식별정보를 제3자에게 제공하는 것에 동의하는 것을 의미합니다). - 법령의 규정에 의거하거나, 수사 목적으로 법령에 정해진 절차와 방법에 따라 수사기관의 요구가 있는 경우 이러한 경우에도,
+                           결제대행사는 이용자에게 (1) 고유식별정보를 제공받는 자, (2) 그의 이용목적, (3) 제공되는 고유식별정보의 항목, (4) 고유정보의 보유 및 이용기간을 사전에 고지하고 이에 대해 명시적ㆍ개별적으로
+                           동의를 얻습니다. 이와 같은 모든 과정에 있어서 결제대행사는 이용자의 의사에 반하여 추가적인 정보를 수집하거나, 동의의 범위를 벗어난 정보를 제3자와 공유하지 않습니다. 결제대행사는 아래와 같이
+                           이용자로부터 수집한 고유식별정보를 제3자에게 제공합니다
+                        </p>
+                        <p>
+                           1) 고유식별정보를 제공받는 자의 고유식별정보 이용 목적 <br />
+                           : 본인 인증, 거래승인
+                        </p>
+                        <p>
+                           2) 제공하는 고유식별정보의 항목<br />
+                           : 이용자의 주민등록번호 앞 6자리(생년월일)
+                        </p>
+                        <p>
+                           3) 고유식별정보를 제공받는 자의 고유식별정보 보유 및 이용 기간<br />
+                           : 해당 사업자가 이미 보유하고 있는 고유식별정보이기 때문에 별도로 저장하지 않음. 단, 법령의 규정에 의한 거래 내역 등을 보관(건당 거래금액이 1만원 이하의 경우 1년, 1만원 초과의 경우 5년)
+                        </p>
+                        <p>
+                           4) 이용자의 고유식별정보의 제공 거부<br />
+                           : 이용자는 결제대행사의 고유식별정보 제공 동의를 거부할 수 있습니다. 단, 동의를 거부 하는 경우 서비스 결제가 정상적으로 완료 될 수 없음을 알려 드립니다.
+                        </p>
+                     </div>
+                  </div>
+                  <div class="join-content-item">
+                     <div class="join-check-box"><label for="chk-box03">동의(필수)</label><input type="checkbox" name="login-chk" id="chk-box03" /></div>
+                     <div class="join-content-label">
+                        <p>개인정보의 수집 및 이용안내</p>
+                     </div>
+                     <div class="join-input-box">
+                        <p class="input-box-title01">[결제] 개인정보의 수집 및 이용안내</p>
+                        <p>
+                           효성FMS(이하 “결제대행사”)는 이용자의 개인정보를 중요시하며, "정보통신망 이용촉진 및 정보보호에 관한 법률" 및 “개인정보보호법”과 “전자상거래 등에서의 소비자 보호에 관한 법률”을 준수하고
+                           있습니다. 결제대행사는 전자지급결제대행서비스 및 결제대금예치서비스(이하 “서비스”) 이용자로부터 아래와 같이 개인정보를 수집 및 이용합니다.
+                        </p>
+                        <p class="input-box-title02">1. 개인정보의 수집 및 이용목적</p>
+                        <p>
+                           ① 결제대행사는 다음과 같은 목적 하에 “서비스”와 관련한 개인정보를 수집합니다. <br />
+                           - 서비스 제공 계약의 성립, 유지, 종료를 위한 본인 식별 및 실명확인, 각종 회원관리<br />
+                           - 서비스 제공 과정 중 본인 식별, 인증, 실명확인 및 회원에 대한 각종 안내/고지<br />
+                           - 대금 환불, 상품배송 등 전자상거래 관련 서비스 제공<br />
+                           - 서비스 제공 및 관련 업무처리에 필요한 동의 또는 철회 등 의사확인<br />
+                           - 이용 빈도 파악 및 인구통계학적 특성에 따른 서비스 제공 및 CRM<br />
+                           - 현금영수증 발행 및 관리 등<br />
+                           - 본인명의로 발행된 결제수단 인증<br />
+                           - 서비스 제공(거래승인 등)및 관련 업무처리(민원, 개인정보 관리상태 점검 등)를 위해 이용자와 해당 결제수단에 관한 계약을 체결한 이용자의 해당 결제수단 발행자(ex : 신용카드의 경우 해당
+                           신용카드사)에게 이용자의 결제정보, 개인정보 보관내역 등 전송<br />
+                           ② 결제수단 발행자에 대한 상세 내용은 아래와 같습니다.<br />
+                           (신용카드)<br />
+                           국민, 비씨, 롯데, 삼성, NH농협, 현대, 신한, 하나 등 신용카드사<br />
+                           (자동이체)<br />
+                           기업/KB국민/농협/우리/SC제일/신한(구 조흥 포함)/대구/부산/경남/광주/새마을금고/하나/KEB하나/전북/우체국/한국씨티(구 한미)/제주/신협/수협/산업(이상 ‘은행’) 유안타/삼성(이상 ‘증권’)
+                        </p>
+                        <p class="input-box-title02">2. 수집하는 개인정보 항목</p>
+                        <p>
+                           ① 결제수단별 결제대행사가 수집하는 개인정보의 항목은 다음과 같습니다. <br />
+                           (신용카드)<br />
+                           카드번호, 승인시간, 승인번호, 승인금액 등<br />
+                           (자동이체)<br />
+                           계좌번호, 비밀번호, 주민등록번호(외국인등록번호), 은행명, 보안카드 또는 OTP 등<br />
+                           (정기과금_신용카드)<br />
+                           - 리얼-카드번호, 카드사, 유효기간, 비밀번호 등<br />
+                           - 파일배치-카드번호, 카드사, 유효기간, 비밀번호 등<br />
+                           (현금영수증)<br />
+                           현금영수증 카드번호, 주민등록번호(외국인등록번호), 사업자등록번호, 휴대폰번호, 승인번호 등<br />
+                           ② 상기 명시된 개인정보 항목 이외의 “서비스” 이용과정이나 “서비스” 처리 과정에서 다음과 같은 추가 정보들이 자동 혹은 수동으로 생성되어 수집 될 수 있습니다.<br />
+                           - 이용자 IP/Mac Address, 쿠키, e-mail, 서비스 접속 일시, 서비스 이용기록, 불량 혹은 비정상 이용기록, 결제기록<br />
+                           ③ 기타, 결제대행사는 서비스 이용과 관련한 대금결제 및 환불 등에 필요한 정보를 추가로 수집할 수 있습니다.
+                        </p>
+                        <p class="input-box-title02">3. 개인정보의 보유 및 이용기간</p>
+                        <p>이용자의 개인정보는 원칙적으로 개인정보의 수집 및 이용목적이 달성되면 지체 없이 파기합니다. 단, 다음의 정보에 대해서는 아래의 이유로 명시한 기간 동안 보존합니다.</p>
+                        <p>
+                           ① 결제대행사 내부 방침의 의한 정보보유 <br />
+                           - 부정이용방지와 비인가사용방지를 위한 결제 이용에 관한 기록<br />
+                           - 보존기간 : 5년<br />
+                           ② 관련법령에 의한 정보보유<br />
+                           상법, 전자상거래 등에서의 소비자보호에 관한 법률, 전자금융거래법 등 관련법령의 규정에 의하여 보존할 필요가 있는 경우 결제대행사는 관련법령에서 정한 일정한 기간 동안 정보를 보관합니다. 이 경우
+                           결제대행사는 보관하는 정보를 그 보관의 목적으로만 이용하며 보존기간은 아래와 같습니다.<br />
+                           - 계약 또는 청약철회 등에 관한 기록<br />
+                           보존기간: 5년 / 보존근거: 전자상거래 등에서의 소비자보호에 관한 법률<br />
+                           - 대금결제 및 재화 등의 공급에 관한 기록<br />
+                           보존기간: 5년 / 보존근거: 전자상거래 등에서의 소비자보호에 관한 법률<br />
+                           (단, 건당 거래 금액이 1만원 이하의 경우에는 1년간 보존 합니다).<br />
+                           - 소비자의 불만 또는 분쟁처리에 관한 기록<br />
+                           보존기간: 3년 / 보존근거: 전자상거래 등에서의 소비자보호에 관한 법률<br />
+                           - 신용정보의 수집/처리 및 이용 등에 관한 기록<br />
+                           보존기간: 3년 / 보존근거: 신용정보의 이용 및 보호에 관한 법률<br />
+                           - 방문에 관한 기록<br />
+                           보존기간: 3개월 / 보존근거: 통신비밀보호법<br />
+                           - 현금영수증 결제내역에 관한 기록<br />
+                           보존기간: 1년 / 보존근거: 조세특례제한법<br />
+                        </p>
+                        <p class="input-box-title02">4. 이용자의 개인정보의 수집 및 이용 거부</p>
+                        <p>이용자는 결제대행사의 개인정보 수집 및 이용 동의를 거부할 수 있습니다. 단, 동의를 거부 하는 경우 서비스 결제가 정상적으로 완료 될 수 없음을 알려 드립니다.</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="pop-bg"></div>
+            </div>
+            <div class="btn-box">
+               <button class="cancel-btn">취소</button>
+               <button class="apply-btn" onclick="location.href='service-finish.html'">신청</button>
+            </div>
+         </div>
+         <footer class="footer">
+            <div class="wrap-innner">
+               <div class="footer-top">
+                  <ul class="footer-info">
+                     <li><a href="#">회사소개</a></li>
+                     <li><a href="service-guide.html">이용약관</a></li>
+                     <li><a href="#">개인정보처리방치</a></li>
+                  </ul>
+                  <ul class="footer-link">
+                     <li>
+                        <a href="#">솔루션 다운로드</a>
+                     </li>
+                     <li>
+                        <a href="#">브로슈어 다운로드</a>
+                     </li>
+                     <li>
+                        <a href="#">카카오톡 채널가기</a>
+                     </li>
+                     <li>
+                        <a href="#">네이버 블로그가기</a>
+                     </li>
+                  </ul>
+               </div>
+               <div class="footer-bottom">
+                  <div class="footer-logo">
+                     <h2 class="footer-logo"><img src="img/footer-logo.png" alt="RX+ 로고" /></h2>
+                     <p>Copyright ⓒ SampleCompany, Inc. All Right Reserved.</p>
+                  </div>
+                  <ul>
+                     <li><span>상호명 : </span>(주) 샘플컴퍼니</li>
+                     <li><span>대표이사 : </span>홍길동</li>
+                     <li><span>사업자등록번호 : </span>000-00-00000</li>
+                     <li class="customer-service"><span>고객지원센터 : </span>0000-0000</li>
+                     <li>평일 09시 ~ 18시 / 토,일,공휴일 휴무</li>
+                  </ul>
+               </div>
+            </div>
+         </footer>
+      </div>
+      <script>
+         const modal = document.querySelector(".pop-wrap");
+         const openModalBtn = document.querySelector(".pop-open");
+         const closeModalBtn = document.querySelector(".pop-close");
+         // 모달창 열기
+         openModalBtn.addEventListener("click", () => {
+            modal.style.display = "block";
+            document.body.style.overflow = "hidden"; // 스크롤바 제거
+         });
+         // 모달창 닫기
+         closeModalBtn.addEventListener("click", () => {
+            modal.style.display = "none";
+            document.body.style.overflow = "auto"; // 스크롤바 보이기
+         });
+      </script>
+   </body>
+</html>

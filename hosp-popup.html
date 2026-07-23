@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>요양기관명 검색</title>
+      <link rel="stylesheet" href="css/reset.css" />
+      <link rel="stylesheet" href="css/common.css" />
+      <link rel="stylesheet" href="css/popup.css" />
+      <script defer src="js/member.js"></script>
+   </head>
+   <body>
+      <div class="wrap-popup">
+         <div class="adress-search">
+            <p class="label-text">요양기관명</p>
+            <div class="adress-input">
+               <input type="text" />
+               <div class="join-input-search">
+                  <button class="search-button"><img src="img/join-search-icon.png" alt="검색" /></button>
+                  <button class="refresh-button"><img src="img/refresh-icon.png" alt="새로고침" /></button>
+               </div>
+            </div>
+         </div>
+         <div class="title-box">
+            <h3 class="table-adress-title">요양기관 목록</h3>
+            <p>총<span class="text-count">5</span>건</p>
+         </div>
+         <div class="scroll-box">
+            <div class="table-scroll">
+               <table class="table-hosp">
+                  <thead>
+                     <tr>
+                        <td>요양기관명</td>
+                        <td>요양기관번호</td>
+                        <td>전화번호</td>
+                        <td>우편번호</td>
+                        <td>주소</td>
+                     </tr>
+                  </thead>
+                  <tbody></tbody>
+               </table>
+            </div>
+         </div>
+         <div class="btn-box">
+            <button class="select-btn">선택</button>
+            <button class="close-btn">닫기</button>
+         </div>
+      </div>
+   </body>
+</html>

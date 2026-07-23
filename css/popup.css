@@ -1,0 +1,259 @@
+.wrap-popup {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   padding: 40px;
+}
+
+/* 주소 검색영역 */
+.adress-search {
+   display: flex;
+   position: relative;
+   width: 100%;
+   border: 1px solid #d4d4d4;
+   border-radius: 10px;
+   margin-bottom: 30px;
+}
+.label-text {
+   display: flex;
+   align-items: center;
+   width: 200px;
+   padding: 0px 30px;
+   background: #f5f5f5;
+   border-radius: 10px 0px 0px 10px;
+   font-size: 1.5rem;
+   font-weight: 500;
+   text-align: left;
+   white-space: nowrap;
+}
+.adress-search > div {
+   width: calc(100% - 200px);
+   padding: 12px 15px;
+}
+
+.adress-input {
+   display: flex;
+}
+.adress-search .adress-example {
+   display: flex;
+   align-items: center;
+   margin-top: 10px;
+   font-size: 1.3rem;
+}
+.adress-search .adress-example::before {
+   content: "";
+   display: inline-block;
+   margin-right: 3px;
+   width: 5px;
+   height: 5px;
+   border-radius: 50%;
+   background: #2872db;
+}
+
+/* 테이블 타이틀 */
+.title-box {
+   display: flex;
+   align-items: flex-end;
+   width: 100%;
+   padding: 5px 15px 15px 15px;
+   justify-content: space-between;
+}
+.title-box .table-adress-title {
+   font-size: 1.8rem;
+   font-weight: 700;
+}
+.title-box > p {
+   font-size: 1.5rem;
+}
+.text-count {
+   color: #2872db;
+   font-weight: 700;
+   padding-left: 5px;
+   padding-right: 1px;
+}
+
+/*** 테이블 영역 ***/
+
+/* 테이블 스크롤 */
+.scroll-box {
+   width: 100%;
+   height: 487px;
+   border-radius: 10px;
+   border: 1px solid #d4d4d4;
+   overflow: hidden;
+}
+.table-scroll {
+   position: relative;
+   height: 487px;
+   overflow-y: auto;
+}
+.table-scroll table thead {
+   position: sticky;
+   top: 0;
+}
+.table-scroll table thead::after {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   z-index: -1;
+   width: 100%;
+   height: 43px;
+   background: #f5f5f5;
+}
+
+/* 테이블 공통 */
+table {
+   position: relative;
+   width: 100%;
+   border-collapse: collapse;
+   border-style: hidden;
+   font-size: 1.3rem;
+}
+table tr {
+   display: inline-flex;
+   width: 100%;
+}
+table td {
+   border-bottom: 1px solid #d4d4d4;
+   padding: 12px 20px;
+   border-right: 1px solid #d4d4d4;
+   text-align: center;
+   vertical-align: middle;
+   line-height: 1.5;
+}
+table td table tr:first-child th:first-child {
+   border-radius: 10px 0px 0px 0px;
+}
+table tr:last-child th:first-child {
+   border-radius: 0px 0px 0px 10px;
+}
+table thead td {
+   background: #f5f5f5;
+   font-weight: 500;
+}
+table thead td:first-child {
+   border-radius: 10px 0px 0px 0px;
+}
+table thead td:last-child {
+   border-right: 0px;
+   border-radius: 0px 10px 0px 0px;
+}
+table tbody {
+   width: 100%;
+}
+table tbody tr td:last-child {
+   border-right: none;
+}
+
+/* 주소검색 팝업 사이즈 조절 */
+.table-adress td:nth-child(1) {
+   width: 24%;
+}
+.table-adress td:nth-child(2) {
+   width: 43%;
+}
+.table-adress tbody td:nth-child(2) {
+   text-align: left;
+}
+.table-adress td:nth-child(3) {
+   width: 43%;
+}
+.table-adress tbody td:nth-child(3) {
+   text-align: left;
+}
+
+/* 요양기관명 팝업 사이즈 조절 */
+.table-hosp td:nth-child(1) {
+   width: 17%;
+}
+.table-hosp td:nth-child(2) {
+   width: 15%;
+}
+.table-hosp td:nth-child(3) {
+   width: 15%;
+}
+.table-hosp td:nth-child(4) {
+   width: 13%;
+}
+.table-hosp td:nth-child(5) {
+   width: 40%;
+}
+.table-hosp tbody td:nth-child(5) {
+   text-align: left;
+}
+/* 버튼 */
+.btn-box {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+}
+.close-btn {
+   width: 150px;
+   height: 46px;
+   margin-left: 10px;
+   margin-top: 50px;
+   border-radius: 10px;
+   background: #666;
+   color: #fff;
+   font-size: 1.6rem;
+   font-weight: 700;
+}
+.select-btn {
+   width: 150px;
+   height: 46px;
+   margin-top: 50px;
+   border-radius: 10px;
+   background: #2872db;
+   color: #fff;
+   font-size: 1.6rem;
+   font-weight: 700;
+}
+
+/******* 비밀번호 변경 팝업 *********/
+.password-popup {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+.password-popup-box {
+   position: relative;
+   width: 600px;
+   height: 433px;
+   padding: 34px 30px 44px 30px;
+   border: 1px solid #d2d2d2;
+}
+.password-popup-box::before {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 5px;
+   background: #2872db;
+}
+.password-popup-box h3 {
+   padding: 60px 0px 40px 0px;
+   font-size: 2.5rem;
+   font-weight: 500;
+}
+.password-text-box {
+   padding: 42px 0px;
+   border-top: 2px solid #666666;
+   border-bottom: 1px solid #dddddd;
+   font-size: 1.5rem;
+   text-align: center;
+}
+.login-btn {
+   width: 195px;
+   height: 46px;
+   margin-top: 50px;
+   border-radius: 10px;
+   background: #2872db;
+   color: #fff;
+   font-size: 1.6rem;
+   font-weight: 700;
+}

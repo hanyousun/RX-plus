@@ -1,0 +1,543 @@
+.wrap-innner.service {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 1000px;
+   padding-bottom: 150px;
+}
+
+/* input 사이즈 */
+.join-input-text {
+   width: 100%;
+}
+.join-input-search {
+   width: 100%;
+}
+.join-input-select {
+   width: 100%;
+}
+.input-col-num::before {
+   left: 97px;
+}
+.input-col-num::after {
+   left: 205px;
+}
+.join-input-text {
+   width: 100px;
+   margin-right: 5px;
+}
+
+/* 테이블 영역 */
+table {
+   width: 100%;
+   border-collapse: collapse;
+   border-radius: 10px;
+   border-style: hidden;
+   box-shadow: 0 0 0 1px #d4d4d4;
+}
+
+table tr {
+   display: flex;
+   align-items: center;
+   height: 61px;
+   border-bottom: 1px solid #d4d4d4;
+}
+table tr th {
+   display: flex;
+   align-items: center;
+   min-width: 200px;
+   height: 100%;
+   padding: 0px 30px;
+   background: #f5f5f5;
+   font-size: 1.6rem;
+   font-weight: 500;
+   text-align: left;
+   white-space: nowrap;
+}
+table tr:first-child th:first-child {
+   border-radius: 10px 0px 0px 0px;
+}
+table tr:last-child th:first-child {
+   border-radius: 0px 0px 0px 10px;
+}
+table td {
+   display: flex;
+   align-items: center;
+   height: 100%;
+   padding: 0px 20px;
+}
+table thead tr {
+   border-bottom: 1px solid #d4d4d4;
+}
+table thead td {
+   background: #f5f5f5;
+   text-align: center;
+   font-weight: 500;
+   border-right: 1px solid #d4d4d4;
+}
+table thead td:first-child {
+   border-radius: 10px 0px 0px 0px;
+}
+table thead td:last-child {
+   border-right: 0px;
+   border-radius: 0px 10px 0px 0px;
+}
+table tbody tr:last-child {
+   border-bottom: 0px;
+}
+table.payment-info th {
+   width: 250px;
+}
+/* 서비스 결제 depth 시작 */
+div.service-depth {
+   position: relative;
+}
+.service-depth ul {
+   position: absolute;
+   bottom: 63px;
+   left: 50%;
+   transform: translateX(-50%);
+   display: flex;
+   color: #aeb2ba;
+   font-size: 1.6rem;
+   font-weight: 700;
+}
+.service-depth ul > li::before {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: absolute;
+   top: -47px;
+   width: 36px;
+   height: 36px;
+   margin-left: -5px;
+   background: #aeb2ba;
+   border-radius: 50%;
+   color: #fff;
+}
+.service-depth ul > li.current-depth::before {
+   background: #2872db;
+}
+.service-depth ul > li:nth-child(1)::before {
+   content: "1";
+}
+.service-depth ul > li:nth-child(2)::before {
+   content: "2";
+}
+.service-depth ul > li:nth-child(3)::before {
+   content: "3";
+}
+.service-depth ul li {
+   margin: 0px 57px 0px 57px;
+}
+.service-depth ul li.current-depth {
+   color: #2872db;
+}
+.service-depth ul > li:not(:first-child):after {
+   content: "";
+   position: absolute;
+   top: -31px;
+   margin-left: -144px;
+   width: 108px;
+   height: 2px;
+   background: #aeb2ba;
+}
+.service-depth ul > li.current-depth:after {
+   background: #2872db;
+}
+/* 서비스 결제 depth 끝 */
+
+/* 텍스트 공통 */
+
+/* 타이틀 */
+.service-title {
+   position: relative;
+   padding: 70px 0px 170px 0px;
+   background: #eef4fe;
+   border-bottom: 1px solid #ededed;
+   font-size: 3rem;
+   font-weight: 700;
+   text-align: center;
+}
+h3 {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 3rem;
+   font-weight: 700;
+}
+.service-subtitle {
+   margin: 70px 0px 40px 0px;
+}
+.service-subtitle p {
+   margin-top: 20px;
+}
+/* 텍스트 색상 */
+.text-blue {
+   color: #2872db;
+}
+.text-red {
+   font-weight: 700;
+   color: #ed2b05;
+}
+/* 텍스트 굵기 */
+.text-bold {
+   font-weight: 700;
+}
+/* 텍스트 사이즈 */
+.text-small {
+   font-size: 1.2rem;
+}
+
+/* 서비스 버튼 */
+/* 버튼 2개 이상 */
+.btn-box {
+   display: flex;
+}
+.cancel-btn {
+   width: 170px;
+   height: 56px;
+   margin-right: 20px;
+   margin-top: 50px;
+   border-radius: 10px;
+   background: #666;
+   color: #fff;
+   font-size: 1.8rem;
+   font-weight: 700;
+}
+.apply-btn {
+   width: 170px;
+   height: 56px;
+   margin-top: 50px;
+   border-radius: 10px;
+   background: #2872db;
+   color: #fff;
+   font-size: 1.8rem;
+   font-weight: 700;
+}
+.prev-btn {
+   width: 170px;
+   height: 56px;
+   margin-right: 20px;
+   margin-top: 50px;
+   border-radius: 10px;
+   background: #666;
+   color: #fff;
+   font-size: 1.8rem;
+   font-weight: 700;
+}
+.next-btn {
+   width: 170px;
+   height: 56px;
+   margin-top: 50px;
+   border-radius: 10px;
+   background: #2872db;
+   color: #fff;
+   font-size: 1.8rem;
+   font-weight: 700;
+}
+/* 서비스 버튼 끝 */
+
+/**** 결제 정보 등록 페이지 시작 ****/
+
+table tr:nth-child(5) .join-input-text {
+   width: 205px;
+}
+.example-text {
+   display: flex;
+   margin-left: 26px;
+   font-size: 1.4rem;
+   white-space: noWrap;
+}
+/* 이용약관 동의 영역 */
+
+.agree-box {
+   display: flex;
+   align-items: center;
+   width: 100%;
+   padding: 20px 30px;
+   border: 1px solid #d4d4d4;
+   border-radius: 10px;
+}
+.agree-box input[type="checkbox"] {
+   width: 23px;
+   height: 23px;
+   outline: 0;
+   border: 1px solid #d4d4d4;
+   border-radius: 2px;
+}
+.agree-box p {
+   position: relative;
+   padding-left: 23px;
+   font-weight: 500;
+}
+.agree-box p::before {
+   content: "*";
+   position: absolute;
+   top: -2px;
+   left: 12px;
+   color: #2872db;
+   font-weight: 700;
+}
+.agree-box button {
+   position: relative;
+   margin-left: auto;
+}
+.agree-box button::after {
+   content: "";
+   position: absolute;
+   left: 0;
+   bottom: 0;
+   width: 51px;
+   height: 1px;
+   background: #666;
+}
+
+/* 팝업 모달창 */
+.pop-wrap {
+   display: none;
+   position: fixed;
+   top: 0;
+   left: 0;
+   z-index: 100;
+   width: 100%;
+   height: 100%;
+   overflow: auto;
+}
+.pop-content {
+   position: absolute;
+   transform: translate(-50%, -50%);
+   top: 50%;
+   left: 50%;
+   padding: 90px 70px 40px 70px;
+   border-radius: 20px;
+   background: #fff;
+}
+.pop-bg {
+   position: fixed;
+   z-index: -100;
+   width: 100vw;
+   height: 100vh;
+   background: rgba(0, 0, 0, 0.7);
+}
+.pop-close {
+   position: absolute;
+   top: 4px;
+   right: 19px;
+   width: 50px;
+   height: 50px;
+}
+.pop-close::before,
+.pop-close::after {
+   content: "";
+   position: absolute;
+   z-index: 1;
+   width: 2px;
+   height: 19px;
+   border-radius: 2px;
+   background: #828282;
+}
+.pop-close::before {
+   transform: rotate(45deg);
+}
+.pop-close::after {
+   transform: rotate(-45deg);
+}
+.join-content-item {
+   position: relative;
+   margin-bottom: 26px;
+}
+.join-content-item .join-content-label {
+   margin-bottom: 12px;
+   font-size: 1.4rem;
+   font-weight: 500;
+}
+.join-input-box .input-box-title01,
+.service-input-box .input-box-title01 {
+   margin-bottom: 10px;
+   font-size: 1.7rem;
+   font-weight: 700;
+   text-align: center;
+}
+.join-input-box .input-box-title02,
+.service-input-box .input-box-title02 {
+   margin-top: 20px;
+   font-weight: 700;
+}
+.join-input-box p,
+.service-input-box p {
+   font-family: "Pretendard";
+   font-size: 1.3rem;
+   line-height: 1.5;
+}
+.join-input-box {
+   width: 745px;
+   height: 160px;
+   margin-bottom: 35px;
+   padding: 30px;
+   border: 1px solid #cecece;
+   border-radius: 3px;
+   overflow-y: auto;
+}
+/* 팝업 모달 끝 */
+
+/**** 결제 정보 등록 페이지 끝 ****/
+
+/***** 서비스 신청정보 등록 페이지 시작 ****/
+/* 가격 부분 텍스트*/
+.text-price p {
+   display: flex;
+   align-items: center;
+   width: 100px;
+   padding: 2px 0px;
+}
+.month-text {
+   font-size: 16px;
+   color: #f5aa08;
+}
+.month-text::before {
+   content: "월";
+   display: inline-block;
+   font-size: 1.2rem;
+   border: 1px solid #f5aa08;
+   border-radius: 3px;
+   padding: 1px 2px 2px 2px;
+   margin: 0px auto 1px 0px;
+}
+.year-text {
+   font-size: 16px;
+   color: #ed2b05;
+}
+.year-text::before {
+   content: "년";
+   display: inline-block;
+   font-size: 1.2rem;
+   border: 1px solid #ed2b05;
+   border-radius: 3px;
+   padding: 1px 2px 2px 2px;
+   margin: 0px auto 1px 0px;
+}
+.text-line {
+   position: relative;
+}
+.text-line::after {
+   content: "";
+   position: absolute;
+   top: 8px;
+   left: 0;
+   width: 100%;
+   height: 2px;
+   background: #2872db;
+}
+/* 선택된 상품 테이블 */
+.table-select td {
+   font-weight: 700;
+}
+.table-select .text-blue.text-small {
+   font-weight: 400;
+}
+.table-select .text-blue.text-small::before {
+   content: "*";
+   display: inline-block;
+   padding: 0px 2px 0px 7px;
+   vertical-align: super;
+}
+
+/* 결제 테이블 시작 */
+
+.table-payment td {
+   font-weight: 700;
+}
+.table-payment {
+   margin-top: 30px;
+}
+.table-payment thead tr td {
+   justify-content: center;
+}
+.table-payment tbody tr {
+   height: 71px;
+}
+.table-payment tbody tr:last-child {
+   color: #666;
+   font-size: 1.3rem;
+   font-weight: 400;
+   line-height: 1.3;
+}
+.table-payment tr input {
+   margin-right: 14px;
+}
+.table-payment tbody tr:last-child td {
+   font-weight: 400;
+}
+.table-payment tbody tr td:first-child {
+   padding-left: 25px;
+}
+.table-payment tbody tr td label {
+   font-weight: 400;
+}
+.table-payment tbody tr td label span {
+   font-weight: 700;
+}
+.table-payment tr:not(:last-child) td:not(:first-child) {
+   justify-content: center;
+}
+.table-payment thead tr td:nth-child(1),
+.table-payment tbody tr:not(:last-child) td:nth-child(1) {
+   width: 44%;
+}
+.table-payment thead tr td:nth-child(2),
+.table-payment tbody tr:not(:last-child) td:nth-child(2) {
+   width: 19%;
+}
+.table-payment thead tr td:nth-child(3),
+.table-payment tbody tr:not(:last-child) td:nth-child(3) {
+   width: 16%;
+}
+.table-payment thead tr td:nth-child(4),
+.table-payment tbody tr:not(:last-child) td:nth-child(4) {
+   width: 21%;
+}
+
+/* 결제 금액 안내 영역*/
+
+.notice-box {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 100%;
+   padding: 20px 30px;
+   border: 1px solid #d4d4d4;
+   border-radius: 10px;
+   font-size: 1.7rem;
+   font-weight: 500;
+}
+
+/* 서비스 신청정보 등록 페이지 끝 */
+
+/* 서비스 신청완료 페이지 시작 */
+
+.complete-text {
+   font-size: 1.7rem;
+   text-align: center;
+   padding: 46px 0px;
+}
+.complete-text .name {
+   font-weight: 700;
+   line-height: 1.8;
+}
+
+/* 다운로드 버튼 */
+.down-button {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0px 35px;
+   width: 350px;
+   height: 70px;
+   border-radius: 10px;
+   background: #2872db;
+   color: #fff;
+   font-size: 1.8rem;
+   font-weight: 500;
+}
+/**** 서비스 신청완료 페이지 끝 ****/

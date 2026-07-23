@@ -1,0 +1,632 @@
+/* input 사이즈 */
+.join-input-text {
+   width: 100%;
+}
+.join-input-search {
+   width: 100%;
+}
+.join-input-select {
+   width: 100%;
+}
+.input-col-num::before {
+   left: 97px;
+}
+.input-col-num::after {
+   left: 205px;
+}
+
+/* 테이블 영역 */
+table {
+   width: 100%;
+   border-collapse: collapse;
+   border-radius: 10px;
+   border-style: hidden;
+   box-shadow: 0 0 0 1px #d4d4d4;
+}
+
+table tr {
+   display: flex;
+   align-items: center;
+   height: 61px;
+   border-bottom: 1px solid #d4d4d4;
+}
+table tr th {
+   display: flex;
+   align-items: center;
+   min-width: 200px;
+   height: 100%;
+   padding: 0px 30px;
+   background: #f5f5f5;
+   font-size: 1.6rem;
+   font-weight: 500;
+   text-align: left;
+   white-space: nowrap;
+}
+table tr:first-child th:first-child {
+   border-radius: 10px 0px 0px 0px;
+}
+table tr:last-child th:first-child {
+   border-radius: 0px 0px 0px 10px;
+}
+table td {
+   display: flex;
+   align-items: center;
+   height: 100%;
+   padding: 0px 20px;
+}
+table thead tr {
+   border-bottom: 1px solid #d4d4d4;
+}
+table thead td {
+   background: #f5f5f5;
+   text-align: center;
+   font-weight: 500;
+   border-right: 1px solid #d4d4d4;
+}
+table thead td:first-child {
+   border-radius: 10px 0px 0px 0px;
+}
+table thead td:last-child {
+   border-right: 0px;
+   border-radius: 0px 10px 0px 0px;
+}
+table tbody tr:last-child {
+   border-bottom: 0px;
+}
+table.payment-info th {
+   width: 250px;
+}
+
+/* 텍스트 공통 */
+.mypage-title {
+   position: relative;
+   padding: 70px 0px 120px 0px;
+   background: #eef4fe;
+   border-bottom: 1px solid #ededed;
+   font-size: 3rem;
+   font-weight: 700;
+   text-align: center;
+}
+.text-blue {
+   color: #2872db;
+}
+
+/* 탭 버튼 */
+.tab-btns {
+   position: absolute;
+   top: -65px;
+   left: 50%;
+   z-index: 1;
+   transform: translateX(-50%);
+   display: flex;
+   justify-content: center;
+}
+.tab-btns li {
+   position: relative;
+   border-bottom: 1px solid #ededed;
+   background: #fff;
+   font-size: 1.6rem;
+   white-space: nowrap;
+   cursor: pointer;
+}
+.tab-btns li a {
+   display: block;
+   padding: 24px 90px;
+}
+.tab-btns li a::after {
+   content: "";
+   position: absolute;
+   right: 0;
+   width: 1px;
+   height: 25px;
+   background: #ededed;
+}
+.tab-btns li.active a::after {
+   background: transparent;
+}
+.tab-btns li:last-child a::after {
+   display: none;
+}
+.tab-btns li a span {
+   margin-left: 3px;
+   padding: 3px 12px;
+   border: 1px solid #d4d4d4;
+   border-radius: 20px;
+   font-size: 1.1rem;
+   font-weight: 400;
+}
+.tab-btns li:last-child::after {
+   height: 0;
+}
+.tab-btn.active {
+   color: #fff;
+   background: #2872db;
+   font-weight: 700;
+}
+.tab-btn.active span {
+   border-color: #aed0ff;
+}
+
+/* 탭페이지 공통 */
+.tab-page > div {
+   position: relative;
+   display: none;
+   flex-direction: column;
+   align-items: center;
+   margin: 0 auto;
+   padding: 90px 0px 150px 0px;
+}
+.mypage-subtitle {
+   margin-bottom: 40px;
+}
+.mypage-subtitle h3 {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 3rem;
+   font-weight: 700;
+}
+
+/**** 페이지01 시작 ****/
+#tab-page01 {
+   width: 1000px;
+}
+#tab-page01 h3 img {
+   width: 90px;
+   margin-right: 10px;
+}
+#tab-page01 button {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0px 35px;
+   width: 350px;
+   height: 70px;
+   border-radius: 10px;
+   background: #2872db;
+   color: #fff;
+   font-size: 1.8rem;
+   font-weight: 500;
+}
+#tab-page01 .rxplus-service {
+   display: flex;
+   width: 100%;
+   margin-top: 70px;
+   padding-top: 40px;
+   border: 1px solid #ededed;
+   background: #fafbfd;
+   flex-direction: column;
+   align-items: center;
+   line-height: 1.2;
+}
+#tab-page01 .rxplus-service > h4 {
+   font-size: 2rem;
+   font-weight: 700;
+   margin-bottom: 5px;
+}
+#tab-page01 .rxplus-service > p {
+   color: #666;
+   font-size: 1.4rem;
+}
+#tab-page01 .rxplus-service > span {
+   color: #2872db;
+   font-size: 1.4rem;
+}
+#tab-page01 .rxplus-service .service-item {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   padding: 50px 0px;
+}
+#tab-page01 .rxplus-service .service-item > div {
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   width: 50%;
+   padding: 18px 0px;
+}
+#tab-page01 .rxplus-service .service-item > div:first-child::after {
+   content: "";
+   position: absolute;
+   right: 0;
+   width: 1px;
+   height: 143px;
+   background: #ededed;
+}
+#tab-page01 .rxplus-service .service-item img {
+   width: fit-content;
+}
+#tab-page01 .rxplus-service .service-item p {
+   color: #2872db;
+   font-size: 2.5rem;
+   font-weight: 700;
+   padding: 5px 0px 7px 0px;
+}
+#tab-page01 .rxplus-service .service-item span {
+   font-size: 1.4rem;
+}
+/**** 페이지01 끝 ****/
+
+/**** 페이지02 시작 ****/
+#tab-page02 {
+   width: 1100px;
+}
+#tab-page02 > div {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+#tab-page02 h3 span {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-left: 8px;
+   width: 93px;
+   height: 33px;
+   border: 1px solid #c8c8c8;
+   border-radius: 30px;
+   background: #fff;
+   font-size: 2rem;
+   font-weight: 500;
+}
+#tab-page02 .modify-page table tr:nth-child(5) {
+   height: 160px;
+}
+#tab-page02 td {
+   width: 350px;
+}
+#tab-page02 td .product-btn {
+   width: 71px;
+   height: 40px;
+   margin-left: 15px;
+   border-radius: 10px;
+   background: #2872db;
+   color: #fff;
+   font-size: 1.4rem;
+}
+#tab-page02 .modify-btn,
+#tab-page02 .save-btn {
+   width: 325px;
+   height: 56px;
+   margin-top: 50px;
+   border-radius: 10px;
+   background: #2872db;
+   color: #fff;
+   font-size: 1.8rem;
+   font-weight: 700;
+}
+/**** 페이지02 끝 ****/
+
+/**** 페이지03 시작 ****/
+#tab-page03 {
+   width: 1000px;
+}
+#tab-page03 .mypage-subtitle {
+   margin-bottom: 96px;
+}
+#tab-page03 .service-title img {
+   margin-right: 15px;
+}
+#tab-page03 .service-title .service-price {
+   padding-left: 100px;
+   color: #666;
+   font-size: 1.3rem;
+   font-weight: 500;
+}
+#tab-page03 .service-items .service-price p {
+   font-size: 2.2rem;
+}
+#tab-page03 .service-items .service-free .service-price p {
+   font-size: 1.9rem;
+}
+#tab-page03 .service-items .service-price span {
+   margin-left: 2px;
+   font-size: 1.3rem;
+}
+#tab-page03 > ul {
+   position: relative;
+   width: 100%;
+   border: 1px solid #d4d4d4;
+   border-radius: 10px;
+}
+#tab-page03 ul li {
+   display: flex;
+   padding-left: 50px;
+   height: 80px;
+   border-bottom: 1px solid #d4d4d4;
+   font-weight: 500;
+   align-items: center;
+}
+#tab-page03 ul li:last-child {
+   border-bottom: none;
+   height: 140px;
+}
+#tab-page03 .service-items {
+   display: flex;
+   position: absolute;
+   top: 157px;
+   right: 0px;
+}
+#tab-page03 .service-items ul {
+   width: 210px;
+   margin-left: 10px;
+}
+#tab-page03 .service-items ul h4 {
+   padding: 20px 0px;
+   color: #fff;
+   border-radius: 10px 10px 0px 0px;
+   font-size: 2rem;
+   font-weight: 600;
+   text-align: center;
+}
+#tab-page03 .service-items ul li {
+   justify-content: center;
+   padding: 0;
+   font-weight: 1.7rem;
+   font-weight: 700;
+}
+/* 가격 영역 */
+#tab-page03 .service-items ul li.service-price {
+   flex-direction: column;
+}
+#tab-page03 .service-items ul li.service-price button {
+   width: 120px;
+   height: 35px;
+   margin-top: 10px;
+   border-radius: 15px;
+   color: #fff;
+   font-weight: 700;
+}
+/* 상품별 버튼 색상 */
+#tab-page03 .service-items ul.service-free li.service-price button {
+   background: #259d53;
+}
+#tab-page03 .service-items ul.service-standard li.service-price button {
+   background: #349ac4;
+}
+#tab-page03 .service-items ul.service-premium li.service-price button {
+   background: #af5cc2;
+}
+/* 상품별 OX 부분 */
+#tab-page03 .service-items ul li.circle::after {
+   content: "";
+   display: block;
+   width: 25px;
+   height: 25px;
+   border-radius: 50%;
+   border: 2px solid;
+}
+#tab-page03 .service-items ul li.cross::before,
+#tab-page03 .service-items ul li.cross::after {
+   content: "";
+   position: absolute;
+   z-index: 1;
+   width: 2px;
+   height: 25px;
+}
+#tab-page03 .service-items ul li.cross::before {
+   transform: rotate(45deg);
+}
+#tab-page03 .service-items ul li.cross::after {
+   transform: rotate(-45deg);
+}
+/* 상품별 OX 색상 */
+#tab-page03 .service-items ul.service-free li.cross::before,
+#tab-page03 .service-items ul.service-free li.cross::after {
+   background: #259d53;
+}
+#tab-page03 .service-items ul.service-standard li.cross::before,
+#tab-page03 .service-items ul.service-standard li.cross::after {
+   background: #349ac4;
+}
+#tab-page03 .service-items ul.service-premium li.cross::before,
+#tab-page03 .service-items ul.service-premium li.cross::after {
+   background: #af5cc2;
+}
+/* free 상품 리스트 */
+#tab-page03 .service-items .service-free {
+   border-bottom: 1px solid #259d53;
+}
+#tab-page03 .service-items .service-free h4 {
+   background: #259d53;
+}
+#tab-page03 .service-items .service-free li {
+   border-left: 1px solid #259d53;
+   border-right: 1px solid #259d53;
+   background: #f6fefa;
+   color: #259d53;
+}
+/* standard 상품 리스트 */
+#tab-page03 .service-items .service-standard {
+   border-bottom: 1px solid #349ac4;
+}
+#tab-page03 .service-items .service-standard h4 {
+   background: #349ac4;
+}
+#tab-page03 .service-items .service-standard li {
+   border-left: 1px solid #349ac4;
+   border-right: 1px solid #349ac4;
+   background: #f3fcff;
+   color: #349ac4;
+}
+/* premium 상품 리스트 */
+#tab-page03 .service-items .service-premium {
+   border-bottom: 1px solid #af5cc2;
+}
+#tab-page03 .service-items .service-premium h4 {
+   background: #af5cc2;
+}
+#tab-page03 .service-items .service-premium li {
+   border-left: 1px solid #af5cc2;
+   border-right: 1px solid #af5cc2;
+   background: #fef7ff;
+   color: #af5cc2;
+}
+
+/**** 페이지03 끝 ****/
+
+/**** 페이지04 시작 ****/
+#tab-page04 {
+   width: 1000px;
+}
+#tab-page04 .mypage-subtitle p {
+   margin-top: 20px;
+}
+#tab-page04 > div:nth-of-type(2) {
+   margin-top: 70px;
+}
+#tab-page04 .agree-box {
+   display: flex;
+   align-items: center;
+   width: 100%;
+   padding: 20px 30px;
+   border: 1px solid #d4d4d4;
+   border-radius: 10px;
+}
+#tab-page04 .agree-box input[type="checkbox"] {
+   width: 23px;
+   height: 23px;
+   outline: 0;
+   border: 1px solid #d4d4d4;
+   border-radius: 2px;
+}
+#tab-page04 .agree-box p {
+   position: relative;
+   padding-left: 23px;
+   font-weight: 500;
+}
+#tab-page04 .agree-box p::before {
+   content: "*";
+   position: absolute;
+   top: -2px;
+   left: 12px;
+   color: #2872db;
+   font-weight: 700;
+}
+#tab-page04 .agree-box button {
+   position: relative;
+   margin-left: auto;
+}
+#tab-page04 .agree-box button::after {
+   content: "";
+   position: absolute;
+   left: 0;
+   bottom: 0;
+   width: 51px;
+   height: 1px;
+   background: #666;
+}
+#tab-page04 .apply-btn {
+   width: 325px;
+   height: 56px;
+   margin-top: 50px;
+   border-radius: 10px;
+   background: #2872db;
+   color: #fff;
+   font-size: 1.8rem;
+   font-weight: 700;
+}
+#tab-page04 .join-input-text {
+   width: 100px;
+   margin-right: 5px;
+}
+#tab-page04 table tr:nth-child(5) .join-input-text {
+   width: 205px;
+}
+.example-text {
+   display: flex;
+   margin-left: 26px;
+   font-size: 1.4rem;
+   white-space: noWrap;
+}
+/**** 페이지04 끝 ****/
+
+/*** 팝업 모달창 ***/
+.pop-wrap {
+   display: none;
+   position: fixed;
+   top: 0;
+   left: 0;
+   z-index: 100;
+   width: 100%;
+   height: 100%;
+   overflow: auto;
+}
+.pop-content {
+   position: absolute;
+   transform: translate(-50%, -50%);
+   top: 50%;
+   left: 50%;
+   padding: 90px 70px 40px 70px;
+   border-radius: 20px;
+   background: #fff;
+}
+.pop-bg {
+   position: fixed;
+   z-index: -100;
+   width: 100vw;
+   height: 100vh;
+   background: rgba(0, 0, 0, 0.7);
+}
+.pop-close {
+   position: absolute;
+   top: 4px;
+   right: 19px;
+   width: 50px;
+   height: 50px;
+}
+.pop-close::before,
+.pop-close::after {
+   content: "";
+   position: absolute;
+   z-index: 1;
+   width: 2px;
+   height: 19px;
+   border-radius: 2px;
+   background: #828282;
+}
+.pop-close::before {
+   transform: rotate(45deg);
+}
+.pop-close::after {
+   transform: rotate(-45deg);
+}
+.join-content-item {
+   position: relative;
+   margin-bottom: 26px;
+}
+.join-content-item .join-content-label {
+   margin-bottom: 12px;
+   font-size: 1.4rem;
+   font-weight: 500;
+}
+.join-input-box .input-box-title01,
+.service-input-box .input-box-title01 {
+   margin-bottom: 10px;
+   font-size: 1.7rem;
+   font-weight: 700;
+   text-align: center;
+}
+.join-input-box .input-box-title02,
+.service-input-box .input-box-title02 {
+   margin-top: 20px;
+   font-weight: 700;
+}
+.join-input-box p,
+.service-input-box p {
+   font-family: "Pretendard";
+   font-size: 1.3rem;
+   line-height: 1.5;
+}
+.join-input-box {
+   width: 745px;
+   height: 160px;
+   margin-bottom: 35px;
+   padding: 30px;
+   border: 1px solid #cecece;
+   border-radius: 3px;
+   overflow-y: auto;
+}

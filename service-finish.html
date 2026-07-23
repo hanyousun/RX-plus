@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>서비스 결제</title>
+      <link rel="stylesheet" href="css/reset.css" />
+      <link rel="stylesheet" href="css/common.css" />
+      <link rel="stylesheet" href="css/service.css" />
+      <script defer src="js/com.js"></script>
+   </head>
+   <body>
+      <div class="wrap">
+         <header class="header">
+            <nav class="nav wrap-innner">
+               <h1 class="logo">
+                  <a href="main.html"><img src="img/header-logo.png" alt="Rx+" /></a>
+               </h1>
+               <ul class="gnb">
+                  <li><a href="#">솔루션</a></li>
+                  <li><a href="#">프로그램 다운받기</a></li>
+               </ul>
+               <div class="join-us">
+                  <button onclick="location.href='signup.html'">회원가입</button>
+                  <button onclick="location.href='login.html'">로그인</button>
+               </div>
+            </nav>
+         </header>
+         <div class="quick-menu">
+            <div class="quick-menu-inner">
+               <div class="customer-support">
+                  <div><img src="img/customer-support-icon.png" alt="" /></div>
+                  <p>고객지원센터</p>
+                  <p>0000 - 0000</p>
+                  <p>평일 09시 ~ 18시<br />토,일,공휴일 휴무</p>
+               </div>
+               <div class="monitoring-support">
+                  <a href="#">
+                     <div><img src="img/monitoring-support-icon.png" alt="" /></div>
+                     <p>원격지원</p>
+                  </a>
+               </div>
+            </div>
+         </div>
+         <h2 class="service-title">서비스 결제</h2>
+         <div class="service-depth">
+            <ul>
+               <li>신청</li>
+               <li>결제</li>
+               <li class="current-depth">완료</li>
+            </ul>
+         </div>
+         <div class="wrap-innner service">
+            <div class="service-subtitle">
+               <h3>감사합니다</h3>
+            </div>
+            <img src="img/finish-icon.png" alt="" />
+            <p class="complete-text">
+               <span class="name">홍길동</span>님의 서비스 신청이 완료되었습니다.<br />
+               RX+ 설치파일을 다운로드 하시면 서비스 이용이 가능합니다.
+            </p>
+            <button class="down-button">Rx+ 설치 프로그램 <img src="img/mypage-download.png" alt="" /></button>
+         </div>
+
+         <footer class="footer">
+            <div class="wrap-innner">
+               <div class="footer-top">
+                  <ul class="footer-info">
+                     <li><a href="#">회사소개</a></li>
+                     <li><a href="service-guide.html">이용약관</a></li>
+                     <li><a href="#">개인정보처리방치</a></li>
+                  </ul>
+                  <ul class="footer-link">
+                     <li>
+                        <a href="#">솔루션 다운로드</a>
+                     </li>
+                     <li>
+                        <a href="#">브로슈어 다운로드</a>
+                     </li>
+                     <li>
+                        <a href="#">카카오톡 채널가기</a>
+                     </li>
+                     <li>
+                        <a href="#">네이버 블로그가기</a>
+                     </li>
+                  </ul>
+               </div>
+               <div class="footer-bottom">
+                  <div class="footer-logo">
+                     <h2 class="footer-logo"><img src="img/footer-logo.png" alt="RX+ 로고" /></h2>
+                     <p>Copyright ⓒ SampleCompany, Inc. All Right Reserved.</p>
+                  </div>
+                  <ul>
+                     <li><span>상호명 : </span>(주) 샘플컴퍼니</li>
+                     <li><span>대표이사 : </span>홍길동</li>
+                     <li><span>사업자등록번호 : </span>000-00-00000</li>
+                     <li class="customer-service"><span>고객지원센터 : </span>0000-0000</li>
+                     <li>평일 09시 ~ 18시 / 토,일,공휴일 휴무</li>
+                  </ul>
+               </div>
+            </div>
+         </footer>
+      </div>
+      <script>
+         const modal = document.querySelector(".pop-wrap");
+         const openModalBtn = document.querySelector(".pop-open");
+         const closeModalBtn = document.querySelector(".pop-close");
+         // 모달창 열기
+         openModalBtn.addEventListener("click", () => {
+            modal.style.display = "block";
+            document.body.style.overflow = "hidden"; // 스크롤바 제거
+         });
+         // 모달창 닫기
+         closeModalBtn.addEventListener("click", () => {
+            modal.style.display = "none";
+            document.body.style.overflow = "auto"; // 스크롤바 보이기
+         });
+      </script>
+   </body>
+</html>

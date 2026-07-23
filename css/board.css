@@ -1,0 +1,82 @@
+.wrap-innner.board {
+   margin-bottom: 150px;
+}
+
+/* 텍스트 공통 */
+.board-title {
+   position: relative;
+   padding: 90px 0px;
+   background: #eef4fe;
+   border-bottom: 1px solid #ededed;
+   font-size: 3rem;
+   font-weight: 700;
+   text-align: center;
+   margin-bottom: 80px;
+}
+/* 테이블 영역 */
+table {
+   width: 100%;
+   border-collapse: collapse;
+   border-radius: 10px;
+   border-style: hidden;
+   box-shadow: 0 0 0 1px #d4d4d4;
+}
+table tr {
+   height: 61px;
+   border-bottom: 1px solid #d4d4d4;
+}
+table tr th {
+   min-width: 200px;
+   padding: 0px 30px;
+   background: #f5f5f5;
+   font-size: 1.6rem;
+   font-weight: 500;
+   text-align: left;
+   vertical-align: middle;
+   white-space: nowrap;
+}
+table tr:first-child th:first-child {
+   border-radius: 10px 0px 0px 0px;
+}
+table tr:last-child th:first-child {
+   border-radius: 0px 0px 0px 10px;
+}
+table td {
+   padding: 20px;
+   vertical-align: middle;
+}
+table thead tr {
+   border-bottom: 1px solid #d4d4d4;
+}
+table thead td {
+   background: #f5f5f5;
+   text-align: center;
+   font-weight: 500;
+   border-right: 1px solid #d4d4d4;
+}
+table thead td:first-child {
+   border-radius: 10px 0px 0px 0px;
+}
+table thead td:last-child {
+   border-right: 0px;
+   border-radius: 0px 10px 0px 0px;
+}
+table tbody tr:last-child {
+   border-bottom: 0px;
+}
+
+/* 확인 버튼 영역 */
+.btn-box {
+   display: flex;
+   justify-content: center;
+}
+.save-btn {
+   width: 325px;
+   height: 56px;
+   margin-top: 50px;
+   border-radius: 10px;
+   background: #2872db;
+   color: #fff;
+   font-size: 1.8rem;
+   font-weight: 700;
+}
