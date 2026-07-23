@@ -80,22 +80,3 @@ table tbody tr:last-child {
    font-size: 1.8rem;
    font-weight: 700;
 }
-
-/* ==================== 반응형 ==================== */
-@media (max-width: 768px) {
-   table tr {
-      height: auto;
-   }
-   table tr th {
-      min-width: 0;
-   }
-}
-
-@media (max-width: 640px) {
-   .board-title {
-      padding: 60px 20px;
-   }
-   .save-btn {
-      width: 100%;
-   }
-}
