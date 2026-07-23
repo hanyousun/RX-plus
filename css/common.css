@@ -2,43 +2,6 @@
 
 /*font*/
 @font-face {
-   font-family: "SCDream";
-   font-style: normal;
-   font-weight: 200;
-   src: local(※), url(../font/SCDream3.otf) format("opentype");
-}
-@font-face {
-   font-family: "SCDream";
-   font-style: normal;
-   font-weight: 400;
-   src: local(※), url(../font/SCDream4.otf) format("opentype");
-}
-@font-face {
-   font-family: "SCDream";
-   font-style: normal;
-   font-weight: 500;
-   src: local(※), url(../font/SCDream5.otf) format("opentype");
-}
-@font-face {
-   font-family: "SCDream";
-   font-style: normal;
-   font-weight: 600;
-   src: local(※), url(../font/SCDream6.otf) format("opentype");
-}
-@font-face {
-   font-family: "SCDream";
-   font-style: normal;
-   font-weight: 700;
-   src: local(※), url(../font/SCDream7.otf) format("opentype");
-}
-@font-face {
-   font-family: "SCDream";
-   font-style: normal;
-   font-weight: 800;
-   src: local(※), url(../font/SCDream8.otf) format("opentype");
-}
-
-@font-face {
    font-family: "Pretendard";
    font-style: normal;
    font-weight: 900;
