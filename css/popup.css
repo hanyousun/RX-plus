@@ -257,3 +257,31 @@ table tbody tr td:last-child {
    font-size: 1.6rem;
    font-weight: 700;
 }
+
+/* ==================== 반응형 ==================== */
+@media (max-width: 768px) {
+   .wrap-popup {
+      padding: 24px;
+   }
+   .adress-search {
+      flex-direction: column;
+   }
+   .label-text {
+      width: 100%;
+      border-radius: 10px 10px 0 0;
+   }
+   .adress-search > div {
+      width: 100%;
+   }
+   .password-popup-box {
+      width: 100%;
+      max-width: 600px;
+      height: auto;
+   }
+   /* 검색결과 표는 열 구조 자체가 의미를 가지므로 스택 대신 기존 스크롤 컨테이너에
+      가로 스크롤을 추가해서 대응 (표 구조는 그대로 유지) */
+   .table-scroll {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+   }
+}

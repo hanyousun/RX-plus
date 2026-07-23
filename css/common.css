@@ -291,6 +291,7 @@ input {
 input[type="text"],
 input[type="password"] {
    width: 100%;
+   min-width: 0;
    padding: 10px 15px;
    border: 1px solid #cecece;
    border-radius: 5px;
@@ -427,7 +428,6 @@ input::placeholder {
 @media (max-width: 1024px) {
    .wrap {
       min-width: 0;
-      overflow-x: hidden;
    }
    .wrap-innner {
       width: 100%;
@@ -486,5 +486,16 @@ input::placeholder {
    .footer .footer-top .footer-link {
       flex-wrap: wrap;
       row-gap: 10px;
+   }
+   /* 폭이 고정된 표(라벨/값 구조)는 세로 스택으로 전환. tr/td를 flex로 재정의하는
+      페이지(mypage.css, service.css, popup.css)는 각 파일에서 별도로 재정의함 */
+   table,
+   table thead,
+   table tbody,
+   table tr,
+   table th,
+   table td {
+      display: block;
+      width: 100%;
    }
 }
